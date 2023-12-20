@@ -1,17 +1,17 @@
-import { Inter } from 'next/font/google'
+import { Eczar } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const eczar = Eczar({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Choose your Cuddles!',
+  title: 'SensoryPet Sneak Peek:',
   description: 'A brief menu introducing you to your potential next stuffed buddy.',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={eczar.className}>
         {children}
       </body>
     </html>

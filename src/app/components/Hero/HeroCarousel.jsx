@@ -15,7 +15,7 @@ const HeroCarousel = () => {
   }
 
   return (
-    <div className='h-3/4 flex justify-center'>
+    <div className='flex justify-center border-2'>
       <form className='relative -left-4 top-12 p-0 m-0 z-4'>
         <div>
           <input type="radio" value={0} checked={radioOption == "0"} onChange={(e)=>{handleButton(e)}}/>
