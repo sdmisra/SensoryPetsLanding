@@ -1,14 +1,14 @@
-import HeroImage from "./HeroImage";
+import HeroCarousel from "./HeroCarousel";
 import HeroText from "./HeroText"
 
 const HeroSection = () => {
   return (
-    <section>
-      <div className='left-hero'>
+    <section className='w-full max-h-[86vh] flex items-center justify-evenly'>
+      <div className='left-hero w-1/3 h-[100%]'>
         <HeroText />
       </div>
-      <div className='right-hero'>
-        <HeroImage/>
+      <div className='flex items-center right-hero w-1/3 h-[100%]'>
+        <HeroCarousel/>
       </div>
     </section>
   )
