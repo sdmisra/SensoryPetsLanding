@@ -1,6 +1,6 @@
 const HeroText = () => {
   return (
-    <section className="flex flex-col items-center p-4 border-2 bg-indigo-900/90">
+    <section className="flex flex-col items-center p-4 border-2 border-slate-100/10 bg-indigo-900/60 rounded-lg">
     <h2 className="text-4xl">Custom companions from our home:</h2>
     <br/>
     <p className="indent-6 text-md">This holiday season, invest your hard earned funds in a product that is handmade and designed by our family to become a member of yours. 
