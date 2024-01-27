@@ -15,8 +15,32 @@ const HeroCarousel = () => {
   }
 
   return (
-    <div className='h-3/4 flex justify-center'>
-      <form className='relative -left-4 top-12 p-0 m-0 z-4'>
+    <div className='flex flex-col h-[80%] w-[95%] rounded-xl backdrop-brightness-[70%] shadow-lg" p-4'>
+    <section className='flex flex-col items-center h-full w-full p-2'>
+      <span className='flex justify-evenly w-[100%] h-[4vh] '>
+        <button 
+        className='flex text-lg border-2 items-center p-2 rounded-lg py-4 bg-slate-100/75'
+        onClick={()=>{setPlushOption('winnie')}
+      }
+        >Winnie</button>
+        <button 
+        className='flex text-lg border-2 items-center p-2 rounded-lg py-4 bg-slate-100/75'
+        onClick={()=>{setPlushOption('maple')}}
+        >Maple</button>
+        <button 
+        className='flex text-lg border-2 items-center p-2 rounded-lg py-4 bg-slate-100/75'
+        onClick={()=>{setPlushOption('begonia')}}
+        >Begonia</button>
+      </span>
+      <Image
+      className='rounded-[50px]'
+      alt="one of the cuddly pets available for purchase today"
+      src={array[plushOption][radioOption]}
+      height={400}
+      width={400}
+      />
+      </section>
+      <form className='flex flex-col items-center p-0 m-0 z-4'>
         <div>
           <input type="radio" value={0} checked={radioOption == "0"} onChange={(e)=>{handleButton(e)}}/>
         </div>
@@ -27,30 +51,6 @@ const HeroCarousel = () => {
           <input type="radio" value={2} checked={radioOption == "2"} onChange={(e)=>{handleButton(e)}}/>
         </div>
       </form>
-      <section className='max-h-3/4 p-2'>
-        <h3 className='flex justify-center p-2'>Choose a buddy to preview:</h3>
-      <span className='w-[100%] h-[4vh] flex justify-evenly'>
-        <button 
-        className='flex text-lg border-2 items-center p-2 rounded-lg py-4'
-        onClick={()=>{setPlushOption('winnie')}}
-        >Winnie</button>
-        <button 
-        className='flex text-lg border-2 items-center p-2 rounded-lg py-4'
-        onClick={()=>{setPlushOption('maple')}}
-        >Maple</button>
-        <button 
-        className='flex text-lg border-2 items-center p-2 rounded-lg py-4'
-        onClick={()=>{setPlushOption('begonia')}}
-        >Begonia</button>
-      </span>
-      <Image
-      className='relative -left-1 rounded-[50px]'
-      alt="one of the cuddly pets available for purchase today"
-      src={array[plushOption][radioOption]}
-      height={500}
-      width={500}
-      />
-      </section>
     </div>
   )
 }

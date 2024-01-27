@@ -1,16 +1,29 @@
+'use client';
+import {motion} from 'framer-motion';
+
 import HeroCarousel from "./HeroCarousel";
-import HeroText from "./HeroText"
+import HeroText from "./HeroText";
 
 const HeroSection = () => {
   return (
-    <section className='w-full h-[86vh] flex items-center justify-evenly border-2'>
-      <div className='left-hero w-1/3 h-[80%]'>
+    <motion.section 
+    initial={{opacity:0}}
+    animate={{opacity:1, backdropFilter: 'brightness(70%)'}}
+    transition={{delay:1, duration: 2}}
+    className='w-full h-[86vh] flex items-center justify-evenly backdrop-brightness-[70%] border-y-2 border-slate-100/10 rounded-s'>
+      <div className='flex items-center left-hero w-1/3 h-full'>
         <HeroText />
       </div>
-      <div className='flex items-center right-hero w-1/3 max-h-[70%]'>
+      <motion.div
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      transition={{delay:6, duration: 2}}
+      className='flex flex-col items-center right-hero w-1/3 h-full'
+      >
+      <h3 className='relative top-0 left-0 p-2 text-5xl text-emerald-50'>Featured Friends:</h3>
         <HeroCarousel/>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   )
 }
 
