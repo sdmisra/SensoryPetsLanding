@@ -15,7 +15,7 @@ const HeroCarousel = () => {
   }
 
   return (
-    <div className='flex flex-col h-[80%] w-[95%] rounded-xl'>
+    <div className='flex flex-col h-[80%] w-[95%] rounded-xl backdrop-brightness-[70%] shadow-lg" p-4'>
     <section className='flex flex-col items-center h-full w-full p-2'>
       <span className='flex justify-evenly w-[100%] h-[4vh] '>
         <button 
