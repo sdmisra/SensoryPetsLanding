@@ -5,7 +5,7 @@ const HeroText = () => {
   return (
     <motion.section 
     initial={{opacity:0}}
-    animate={{opacity:.9, backgroundColor: 'rgb(21, 94, 117, 50%)'}}
+    animate={{opacity:.9, backgroundColor: 'rgb(195, 216, 223, 0.50)'}}
     transition={{delay: .5, duration: 4}}
     className="flex flex-col items-center p-4 rounded-lg text-emerald-50 shadow-lg"
     >
