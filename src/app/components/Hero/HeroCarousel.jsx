@@ -7,10 +7,8 @@ const HeroCarousel = () => {
   const [radioOption, setRadioOption] = useState(0)
   const [plushOption, setPlushOption] = useState('winnie')
   const array = assetPaths;
-  console.log(array)
 
   const handleButton = (event) => {
-    console.log(event)
     setRadioOption(event.target.value)
   }
 
