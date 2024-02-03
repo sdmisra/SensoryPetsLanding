@@ -10,6 +10,6 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: url('../../public/Nevertheless.svg') center no-repeat;
+  background: url('../../public/PasternExtended.png') center no-repeat;
   background-size: cover;
 }
