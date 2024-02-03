@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image'
 import assetPaths from '@/app/assets/plushArray'
+import {motion} from 'framer-motion'
 import {useState} from 'react'
 
 const HeroCarousel = () => {
@@ -16,19 +17,25 @@ const HeroCarousel = () => {
     <div className='flex flex-col h-[80%] w-[95%] rounded-xl backdrop-brightness-[70%] shadow-lg" p-4'>
     <section className='flex flex-col items-center h-full w-full p-2'>
       <span className='flex justify-evenly w-[100%] h-auto p-2'>
-        <button 
-        className='flex text-lg border-2 items-center p-2 rounded-lg bg-slate-100/75'
+        <motion.button 
+        className='flex text-lg border-2 items-center p-2 rounded-lg bg-slate-200/90'
         onClick={()=>{setPlushOption('winnie')}
-      }
-        >Winnie</button>
-        <button 
-        className='flex text-lg border-2 items-center p-2 rounded-lg bg-slate-100/75'
+        }
+        whileHover={{scale: 1.1, }}
+        whileTap={{scale: .9}}
+        >Winnie</motion.button>
+        <motion.button 
+        className='flex text-lg border-2 items-center p-2 rounded-lg bg-slate-200/90'
         onClick={()=>{setPlushOption('maple')}}
-        >Maple</button>
-        <button 
-        className='flex text-lg border-2 items-center p-2 rounded-lg bg-slate-100/75'
+        whileHover={{scale: 1.1}}
+        whileTap={{scale: .9}}
+        >Maple</motion.button>
+        <motion.button 
+        className='flex text-lg border-2 items-center p-2 rounded-lg bg-slate-200/90'
         onClick={()=>{setPlushOption('begonia')}}
-        >Begonia</button>
+        whileHover={{scale: 1.1}}
+        whileTap={{scale: .9}}
+        >Begonia</motion.button>
       </span>
       <Image
       className='flex self-center py-2 rounded-[50px]'
