@@ -5,9 +5,9 @@ const HeroText = () => {
   return (
     <motion.section 
     initial={{opacity:0}}
-    animate={{opacity:.9, backgroundColor: 'rgb(195, 216, 223, 0.50)'}}
+    animate={{opacity:.9, backgroundColor: 'rgb(21,42,75)'}}
     transition={{delay: .5, duration: 4}}
-    className="flex flex-col items-center w-full h-4/5 p-2 rounded-lg text-emerald-50 shadow-lg"
+    className="flex flex-col items-center justify-center w-full h-4/5 p-2 rounded-lg text-cyan-50 shadow-lg"
     >
       <motion.h2
       initial={{opacity:0}}
@@ -21,7 +21,7 @@ const HeroText = () => {
       initial={{opacity:0}}
       animate={{opacity:1}}
       transition={{delay: 3, duration: 2}}
-      className="indent-6 text-md"
+      className="indent-6 text-lg"
       >Invest your hard earned funds in a product that is handmade and designed by our family to become a member of yours. 
       Our weighted and scented plushes are a perfect product for all ages, and offer a truly unique companion that suits your sensory needs - textural preferences, scenting options, and weight are considerations that we take seriously to offer you a product that you will cherish for many years to come.
       </motion.p>
@@ -30,7 +30,7 @@ const HeroText = () => {
       initial={{opacity:0}}
       animate={{opacity:1}}
       transition={{delay: 4, duration: 2}}
-      className='indent-6 text-md'>Bring your loved ones comfort that will withstand the challenges ahead, and let us bring your ideal plushes to life with a custom order!</motion.p>
+      className='indent-6 text-lg'>Bring your loved ones comfort that will withstand the challenges ahead, and let us bring your ideal plushes to life with a custom order!</motion.p>
       <br />
       <motion.h2
       initial={{opacity: 0}}
@@ -50,7 +50,7 @@ const HeroText = () => {
       initial={{opacity: 0}}
       animate={{opacity:1}}
       transition={{delay: 7, duration: 2}}
-      className='indent-6 text-md'>
+      className='indent-6 text-lg'>
       Our products are double sewn and we thoughtfully distribute our weighting materials to ensure that no leaks or tears occur, but we are eager to respond if you have any concerns or questions about your beaded buddy along the way.
       </motion.p>
     </motion.section>

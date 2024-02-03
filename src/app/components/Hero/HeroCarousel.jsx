@@ -14,26 +14,26 @@ const HeroCarousel = () => {
   }
 
   return (
-    <div className='flex flex-col h-[80%] w-[95%] rounded-xl backdrop-brightness-[70%] shadow-lg" p-4'>
+    <div className='flex flex-col h-[80%] w-[95%] rounded-xl shadow-lg" p-4'>
     <section className='flex flex-col items-center h-full w-full p-2'>
       <span className='flex justify-evenly w-[100%] h-auto p-2'>
         <motion.button 
         className='flex text-lg border-2 items-center p-2 rounded-lg bg-slate-200/90'
         onClick={()=>{setPlushOption('winnie')}
         }
-        whileHover={{scale: 1.1, }}
+        whileHover={{scale: 1.2, backgroundColor: 'rgb(21,42,75, .5)', color: 'rgb(234, 251, 256)'}}
         whileTap={{scale: .9}}
         >Winnie</motion.button>
         <motion.button 
         className='flex text-lg border-2 items-center p-2 rounded-lg bg-slate-200/90'
         onClick={()=>{setPlushOption('maple')}}
-        whileHover={{scale: 1.1}}
+        whileHover={{scale: 1.2, backgroundColor: 'rgb(21,42,75, .5)', color: 'rgb(234, 251, 256)'}}
         whileTap={{scale: .9}}
         >Maple</motion.button>
         <motion.button 
         className='flex text-lg border-2 items-center p-2 rounded-lg bg-slate-200/90'
         onClick={()=>{setPlushOption('begonia')}}
-        whileHover={{scale: 1.1}}
+        whileHover={{scale: 1.2, backgroundColor: 'rgb(21,42,75, .5)', color: 'rgb(234, 251, 256)'}}
         whileTap={{scale: .9}}
         >Begonia</motion.button>
       </span>

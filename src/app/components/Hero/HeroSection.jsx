@@ -11,7 +11,7 @@ const HeroSection = () => {
     animate={{opacity:1, backdropFilter: 'brightness(70%)'}}
     transition={{delay:1, duration: 2}}
     className='w-full h-[86vh] flex items-center justify-evenly backdrop-brightness-[80%] border-y-2 border-slate-100/10 rounded-s'>
-      <div className='flex items-center left-hero w-2/3 h-full p-2'>
+      <div className='flex items-center left-hero w-1/2 h-full p-2'>
         <HeroText />
       </div>
       <motion.div
