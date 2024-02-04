@@ -9,7 +9,7 @@ const HeroCarousel = () => {
   const [plushOption, setPlushOption] = useState('winnie')
   const array = assetPaths;
 
-  const handleButton = (event) => {
+  const selectOption = (event) => {
     setRadioOption(event.target.value)
   }
 
@@ -47,13 +47,13 @@ const HeroCarousel = () => {
       </section>
       <form className='flex justify-center p-2 m-2 z-4'>
         <div>
-          <input type="radio" value={0} checked={radioOption == "0"} onChange={(e)=>{handleButton(e)}}/>
+          <input type="radio" value={0} checked={radioOption == "0"} onChange={(e)=>{selectOption(e)}}/>
         </div>
         <div>
-          <input type="radio" value={1} checked={radioOption == "1"} onChange={(e)=>{handleButton(e)}}/>
+          <input type="radio" value={1} checked={radioOption == "1"} onChange={(e)=>{selectOption(e)}}/>
         </div>
         <div>
-          <input type="radio" value={2} checked={radioOption == "2"} onChange={(e)=>{handleButton(e)}}/>
+          <input type="radio" value={2} checked={radioOption == "2"} onChange={(e)=>{selectOption(e)}}/>
         </div>
       </form>
     </div>
