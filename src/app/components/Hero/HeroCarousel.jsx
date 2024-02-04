@@ -39,7 +39,7 @@ const HeroCarousel = () => {
         whileTap={{scale: .9}}
         >Begonia</motion.button>
       </span>
-    <section className='flex flex-col items-center justify-center h-full w-full p-2 rounded-lg bg-slate-100/50  border-slate-100/10 border-2'>
+    <section className='flex flex-col items-center justify-center h-full w-full rounded-lg bg-slate-100/50  border-slate-100/10 border-2'>
       <Image
       className='p-2 rounded-[2rem]'
       alt="one of the cuddly pets available for purchase today"
