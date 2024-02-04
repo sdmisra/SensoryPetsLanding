@@ -1,8 +1,8 @@
 'use client';
 import Image from 'next/image'
 import assetPaths from '@/app/assets/plushArray'
-import {motion} from 'framer-motion'
-import {useState} from 'react'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 const HeroCarousel = () => {
   const [radioOption, setRadioOption] = useState(0)
@@ -14,38 +14,41 @@ const HeroCarousel = () => {
   }
 
   return (
-    <div className='flex flex-col h-[80%] w-[95%] rounded-xl shadow-lg" p-4'>
-    <section className='flex flex-col items-center h-full w-full p-2'>
-      <span className='flex justify-evenly w-[100%] h-auto p-2'>
+    <motion.div 
+    className='flex flex-col h-[85%] w-[95%] border-2 border-slate-100/50 p-2 rounded-lg backdrop-brightness-75'
+    animate={{opacity:.9, backgroundColor: 'rgb(21,42,75)'}}
+    >
+    <section className='flex flex-col items-center h-full w-full p-2 rounded-lg bg-slate-400/40  border-slate-100/10 border-2'>
+      <span className='flex justify-evenly w-[100%] p-2'>
         <motion.button 
         className='flex text-lg border-2 items-center p-2 rounded-lg bg-slate-200/90'
         onClick={()=>{setPlushOption('winnie')}
         }
-        whileHover={{scale: 1.2, backgroundColor: 'rgb(21,42,75, .5)', color: 'rgb(234, 251, 256)'}}
+        whileHover={{scale: 1.2, backgroundColor: 'rgb(21,42,75, .7)', color: 'rgb(234, 251, 256)'}}
         whileTap={{scale: .9}}
         >Winnie</motion.button>
         <motion.button 
         className='flex text-lg border-2 items-center p-2 rounded-lg bg-slate-200/90'
         onClick={()=>{setPlushOption('maple')}}
-        whileHover={{scale: 1.2, backgroundColor: 'rgb(21,42,75, .5)', color: 'rgb(234, 251, 256)'}}
+        whileHover={{scale: 1.2, backgroundColor: 'rgb(21,42,75, .7)', color: 'rgb(234, 251, 256)'}}
         whileTap={{scale: .9}}
         >Maple</motion.button>
         <motion.button 
         className='flex text-lg border-2 items-center p-2 rounded-lg bg-slate-200/90'
         onClick={()=>{setPlushOption('begonia')}}
-        whileHover={{scale: 1.2, backgroundColor: 'rgb(21,42,75, .5)', color: 'rgb(234, 251, 256)'}}
+        whileHover={{scale: 1.2, backgroundColor: 'rgb(21,42,75, .7)', color: 'rgb(234, 251, 256)'}}
         whileTap={{scale: .9}}
         >Begonia</motion.button>
       </span>
       <Image
-      className='flex self-center py-2 rounded-[50px]'
+      className='py-2 rounded-[2rem]'
       alt="one of the cuddly pets available for purchase today"
       src={array[plushOption][radioOption]}
-      height={400}
-      width={400}
+      height={500}
+      width={500}
       />
       </section>
-      <form className='flex justify-center p-2 m-2 z-4'>
+      <form className='flex justify-evenly p-2 m-2'>
         <div>
           <input type="radio" value={0} checked={radioOption == "0"} onChange={(e)=>{selectOption(e)}}/>
         </div>
@@ -56,7 +59,7 @@ const HeroCarousel = () => {
           <input type="radio" value={2} checked={radioOption == "2"} onChange={(e)=>{selectOption(e)}}/>
         </div>
       </form>
-    </div>
+    </motion.div>
   )
 }
 

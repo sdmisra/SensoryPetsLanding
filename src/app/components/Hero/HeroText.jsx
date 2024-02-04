@@ -7,14 +7,14 @@ const HeroText = () => {
     initial={{opacity:0}}
     animate={{opacity:.9, backgroundColor: 'rgb(21,42,75)'}}
     transition={{delay: .5, duration: 4}}
-    className="flex flex-col items-center justify-center w-full h-4/5 p-2 rounded-lg text-cyan-50 shadow-lg"
+    className="flex flex-col items-center justify-center w-full h-4/5 p-4 rounded-lg text-cyan-50 shadow-sm border-2 border-slate-100/50"
     >
       <motion.h2
       initial={{opacity:0}}
       animate={{opacity:1}}
       transition={{delay: 2, duration: 1}}
       className="sm:text-lg md:text-4xl">
-      Custom companions from our home to yours:
+      Custom companions from our home:
       </motion.h2>
       <br/>
       <motion.p 

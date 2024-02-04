@@ -20,7 +20,7 @@ const HeroSection = () => {
       transition={{delay:6, duration: 2}}
       className='flex flex-col items-center right-hero w-1/3 h-full p-2'
       >
-      <h3 className='relative top-0 left-0 p-2 text-5xl text-emerald-50'>Featured Friends:</h3>
+      <h3 className='p-2 text-5xl text-emerald-50'>Featured Friends:</h3>
         <HeroCarousel/>
       </motion.div>
     </motion.section>
