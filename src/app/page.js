@@ -4,7 +4,7 @@ import HeroSection from "./components/Hero/HeroSection"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center justify-stretch md:justify-between">
       <Header/>
       <HeroSection />
       <Footer />
